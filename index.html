@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leia este Livro e DESCUBRA SE VOCÊ CONGREGA EM UMA IGREJA HEREGE!</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+background-color: #0d0d0d;
+color: #ffffff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 20px;
+text-align: center;
+}
+.container {
+max-width: 500px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.cover-img {
+width: 100%;
+max-width: 450px;
+height: auto;
+border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+margin-bottom: 25px;
+}
+.btn-next {
+display: inline-block;
+width: 100%;
+max-width: 300px;
+padding: 16px 24px;
+background: linear-gradient(135deg, #d32f2f, #9a0007);
+color: #ffffff;
+font-size: 1.2rem;
+font-weight: bold;
+text-decoration: none;
+border-radius: 8px;
+border: none;
+cursor: pointer;
+box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
+transition: transform 0.2s, background 0.2s;
+}
+.btn-next:active {
+transform: scale(0.98);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<img src="logo-512.png" alt="Leia este Livro e DESCUBRA SE VOCÊ CONGREGA EM UMA IGREJA HEREGE! - Gilberto Moreira" class="cover-img">
+<a href="1.html" class="btn-next">PRÓXIMO »</a>
+</div>
+
+<script>
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', () => {
+navigator.serviceWorker.register('sw.js')
+.then(reg => console.log('SW registrado'))
+.catch(err => console.error('Erro no SW:', err));
+});
+}
+</script>
+</body>
+</html>
